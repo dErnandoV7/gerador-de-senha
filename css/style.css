@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background: #142414 linear-gradient(132deg, #142414 0%, #249826 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    animation: animation-background 8s linear infinite
+}
+
+@keyframes animation-background {
+    0% {
+        background-size: 100%;
+    }
+
+    10% {
+        background-size: 100%
+    }
+    25% {
+        background-size: 150%;
+    }
+
+    50% {
+        background-size: 200%;
+
+    }
+
+    75% {
+        background-size: 150%;
+
+    }
+    90% {
+        background-size: 100%
+
+    }
+    100% {
+        background-size: 100%;
+
+    }
+}
+
+.container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container h1 {
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+.title-container h1 span{
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+.sizePassword-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+
+input[type='range'] {
+    -webkit-appearance: none;
+    background: #ffffff3a;
+    outline: none;
+    width: 250px;
+    max-width: 200px;
+    height: 20px;
+    border-radius: 9px;   
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: rgb(0, 255, 0);
+    cursor: pointer;
+}
+
+.container-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.to-generate {
+    background: transparent;
+    border: none;
+    border: 1px solid rgba(0, 255, 0, 0.459);
+    color: #fff;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.to-generate:hover {
+    background: #0b830b;
+    border: none;
+    transform: scale(1.05);
+}
+
+.yourPassword {
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.yourPassword img {
+    cursor: pointer;
+}
+
+.passwordCopy {
+    display: none;
+}
