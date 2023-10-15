@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css">
     <title>password generator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="title-container">
-            <h1>password <span>generator</span></h1>
+      <div class="title-container">
+        <h1>password <span>generator</span></h1>
+      </div>
+      <div class="container-generator">
+        <div class="sizePassword-container">
+          <input
+            type="range"
+            name="sizePassword"
+            class="sizePassword"
+            min="8"
+            max="15"
+            value="8"
+            onchange="showValueInput()"
+          />
+          <span class="valueInput"></span>
         </div>
-        <div class="container-generator">
-            <div class="sizePassword-container">
-                <input type="range" name="sizePassword" class="sizePassword" min="8" max="15" value="8" onchange="showValueInput()">
-                <span class="valueInput"></span>
-            </div>
 
-            <h2 class="yourPassword"></h2>
-            <span class="passwordCopy"></span>
-            </div>
-            <button class="to-generate">To generate</button>
-            <div class="yourPassword-container">
-        </div>
+        <h2 class="yourPassword"></h2>
+        <span class="passwordCopy"></span>
+      </div>
+      <button class="to-generate">To generate</button>
+      <div class="yourPassword-container"></div>
     </div>
+    <footer>
+      <div class="informacoes-profissionais">
+        <p>Desenvolvido por <strong>Ernando Matias</strong></p>
+        <ul class="habilidades">
+          <li><img src="img/html.png" /></li>
+          <li><img src="img/css.png" /></li>
+          <li><img src="img/js.png" /></li>
+        </ul>
+      </div>
+      <div class="redes-sociais">
+        <ul>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=558897244032"
+              ><img src="img/whatsapp.svg" alt="img/whatsapp.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/a.m.ernando"
+              ><img src="img/instagram.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/dErnandoV7"
+              ><img src="img/github.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@servodejc"
+              ><img src="img/tiktok.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
